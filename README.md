@@ -1,1 +1,1 @@
-# Django-Virtual-Enviroment-Project-and-Application-Creation
+# Django-Virtual-Environment-Project-and-Application-Creation
