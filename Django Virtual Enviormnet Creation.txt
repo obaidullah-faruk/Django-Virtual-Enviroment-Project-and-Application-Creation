@@ -1,0 +1,106 @@
+*** Download Python from here https://www.python.org/downloads/
+*** Download Anaconda from here https://www.anaconda.com/download/
+*** Downlaod PyCharm from here https://www.jetbrains.com/pycharm/download/#section=windows
+Then install all of them .
+
+cmd -> Command line of Anaconda Prompt
+
+## Open Anaconda Prompt
+
+cmd: conda create --name DjangoEnvirmentName django
+
+Then the following NEW packages will be INSTALLED:
+
+    certifi:        2016.2.28-py36_0
+    django:         1.11.3-py36_0
+    pip:            9.0.1-py36_1
+    python:         3.6.2-0
+    pytz:           2017.2-py36_0
+    setuptools:     36.4.0-py36_1
+    vc:             14-0
+    vs2015_runtime: 14.0.25420-0
+    wheel:          0.29.0-py36_0
+    wincertstore:   0.2-py36_0
+
+Proceed ([y]/n)? 
+
+if n:
+conda create --name DjangoEnvirmentName python 3.x ( x could be any version of python)
+
+Otherwise y:
+
+After Installation
+#To activate this environment, use:
+activate DjangoEnvirmentName
+#To deactivate this environment, use:
+deactivate DjangoEnvirmentName
+
+activate DjangoEnvirmentName
+cmd: conda install django
+
+#For upgrading from the existing version of Django 1.11.X to 2.0.Y
+
+cmd: pip install Django==2.0.Y
+
+cmd: python -m pip install --upgrade pip
+
+
+
+### Creatig Project
+
+
+cmd: cd Desktop
+cmd: mkdir Django_Folder
+cmd: cd Django_Folder
+
+THEN
+
+Open PyCharm -> File -> Open
+
+cmd: activate DjangoEnvirmentName
+
+
+#To Create a project
+cmd: django-admin startproject Project_Name
+
+
+# Enter in project directory
+cmd: cd Project_Name
+
+
+#To run the surver
+
+cmd: python manage.py runserver
+[ Copy url and paste in browser to see if the project is working or not! ]
+ctrl + c
+
+
+#To crate an Application 
+
+cmd: python manage.py startapp Application_Name
+or
+cmd: django-admin startapp Application_Name
+
+
+#########
+In settings.py of project add the Application_Name
+INATALLED APPS = [
+     'Application_Name',
+]
+
+
+# To migrate the database 
+
+cmd: python manage.py migrate
+
+cmd: python manage.py makemigrations
+or
+cmd: python manage.py makegigration Application_Name
+
+cmd: python manage.py runserver
+
+
+Bingooo ! ! ! You are ready to go :) 
+
+
+
